@@ -1,5 +1,5 @@
 body{
-background-color: #ffff66;
+  background-color: #ffff66;
   color: aqua;
   margin: 0;
 }
@@ -24,7 +24,6 @@ h1{
  border-style: dashed solid;
 }
 #navigation > ul ul {
-display: none;
 list-style: none;
 position: absolute;
 background-color: teal;
@@ -38,14 +37,13 @@ top: 22px;
 #navigation > ul ul:hover{
   display: block;
 }
-#navigation > ul ul:hover{
-  display: block;
-}
-#navigation a:hover + ul{
+
+#navigation .dropdown:hover + ul{
   display: block;
 }
 #content{
   background-color: orange;
+  margin-top: 150px;
 }
 #content > p{
   color: black;
@@ -57,6 +55,9 @@ top: 22px;
 }
 #footer p{
   color: red;
+}
+.dropdown{
+  display: none;
 }
 .container {
   width: 90%

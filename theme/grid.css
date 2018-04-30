@@ -1,0 +1,16 @@
+#Grid{
+  display: grid;
+}
+#Grid > div{
+  background-color: hotpink;
+  padding:15px;
+  margin: 10px;
+}
+#Grid > div:first-child{
+  grid-column: 1 / -1;
+}
+@media (min-width: 415px) {
+  #Grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
